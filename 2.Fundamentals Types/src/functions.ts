@@ -1,12 +1,14 @@
 // Function with inferred return type
 function _calculateTax(income: number) {
     // Hover the mouse over the function, and you will see the return type is inferred as void.
-    income = 2;
+    if (income < 50_000)
+        income *= 1.2;
 }
 
 // Function with different return types
 function __calculateTax(income: number) {
-    income = 2;
+    if (income < 50_000)
+        income *= 1.2;
     // return 0;   // Hover over: TypeScript infers the return type as 'number'.
     // return true;   // Hover over: TypeScript infers the return type as 'boolean'.
     // return "";   // Hover over: TypeScript infers the return type as 'string'.
@@ -14,14 +16,16 @@ function __calculateTax(income: number) {
 
 // Best practice: Explicitly annotate the function return type, especially when dealing with APIs.
 function calculateTaxAnnotated(income: number): number {
-    income = 2;
+    if (income < 50_000)
+        income *= 1.2;
     return 0;  // The return type is explicitly set to 'number'.
     // return ""; //Error
 }
 
 // Use 'void' if you are not returning any value.
 function calculateTax(income: number): void {
-    income = 2;
+    if (income < 50_000)
+        income *= 1.2;
     // Perform operations...
 }
 
