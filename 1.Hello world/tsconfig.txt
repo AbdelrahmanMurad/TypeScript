@@ -1,0 +1,29 @@
+//To make this config file => command on terminal: "tsc --init"
+//That few of the configirations, We dont need to understand all of it.
+{
+	/* Language and Environment Options */
+	"target":"es2016", // which version of js the ts compiler is going to generate
+	
+	/* Modules Options */
+  "module":"commonjs", //We will come for it later
+	"rootDir": "./src", // Specifies the directory where TypeScript source code lives (./src in this case)
+	
+	/* Emit Options */
+  "sourceMap": true, // Create source map files that map the emitted JavaScript back to the original TypeScript for easier debugging.
+	"outDir": "./dist", // Specifies the directory where the generated JavaScript files will be placed (./dist in this case)
+  "removeComments":true, // TS compiler will remove comments from the generated js code
+  "noEmitOnError":true, // don't compile ts into js if there is an error
+  
+  /* Type Checking Options */
+  "strict": true,            // Enable all strict type-checking options. [make all the strict options true]
+	"noUnusedLocals": true,   // Show a warning when there is an unused variable in a function.
+	"noUnusedParameters": true,   // Show a warning when there is an unused argument in a function.
+	"noImplicitReturns": true,   // Show a warning when a function has implicit return types (not explicitly determined/not annotated).
+	"strictNullChecks": true, // When type checking, take into account 'null' and 'undefined'. [You should never turn that off => dont make it false]
+  "allowUnreachableCode": false, // show a warning when there is an unreachable code
+
+  //For Later
+  "noImplicitOverride":true, // show an error when overriding a method without typing the override modifier.
+  "allowjs":true,
+	"checkjs":true,
+}

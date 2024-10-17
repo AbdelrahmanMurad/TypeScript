@@ -1,0 +1,31 @@
+TypeScript = JS with Type Checking. 
+=====
+Benefits: Typescript provides
+    1. Type Checking (Static Typing)
+    2. code-completion
+    3. refactoring
+    4. shorthand notations
+=====
+Drawbacks:
+- Compilation step [Transpilation Process]
+    Browsers dont understand ts code, so we need to do a Transpilation process, which is giving the .ts to the compiler and translate it to .js
+- Discipline in coding
+=====
+TypeScript for medium ⇒ large projects, JavaScript for simple projects
+=====
+Type *tsc nameOfFile.ts* on the terminal to run the compiler.
+- it will make a new folder in js with the same code. [Transpilation Process]
+=====
+Here is how TS declaration ⇒ let name: type = value
+=====
+- Programming languages divide into two categories: `statically-typed` and `dynamically-typed`.
+- In `statically-typed` languages `(eg C++, C#, Java, etc)`, the type of variables is set at compile-time and cannot change later.
+- In `dynamically-typed` languages `(eg Python, JavaScript, Ruby)`, the type of variables is determined at run-time and can change later.
+- TypeScript is essentially ``JavaScript with static typing and some additional features that help us write more concise and robust code``.
+- Most IDEs and code editors supporting TypeScript provide incredible IntelliSense and auto-completion. So, we get active hints as we code. A great productivity booster!
+- By providing type information in our code, we get better refactoring support in most IDEs and code editors.
+- Refactoring means ``changing the structure of the code without changing its behavior``.
+- With TypeScript we can catch more bugs at compile time.
+- Browsers don’t understand TypeScript code. So, we need to use the TypeScript compiler to compile and `translate` (or `transpile`) our TypeScript code into regular JavaScript for execution by browsers.
+- Source maps are ``files that represent the mapping between TypeScript and JavaScript code. They’re used for debugging``.
+- We can configure the TypeScript compiler by enabling/disabling various settings in tsconfig.json.
