@@ -43,6 +43,7 @@ class ProductStore extends Store<IProduct> {
     // Method to filter products by category.
     filterByCategory(category: string): IProduct[] {
         console.log(category); // To prevent the yellow warning.
+        //some operations
         return [];
     }
 }
